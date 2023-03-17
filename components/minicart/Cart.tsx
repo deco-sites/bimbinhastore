@@ -1,14 +1,13 @@
-import { useCart } from "deco-sites/std/commerce/vtex/cart/useCart.ts";
-import { formatPrice } from "$store/sdk/format.ts";
 import Button from "$store/components/ui/Button.tsx";
 import Text from "$store/components/ui/Text.tsx";
+import { formatPrice } from "$store/sdk/format.ts";
+import { useCart } from "deco-sites/std/commerce/vtex/cart/useCart.ts";
 
 import { useUI } from "../../sdk/useUI.ts";
 import CartItem from "./CartItem.tsx";
 import Coupon from "./Coupon.tsx";
 
-const CHECKOUT_URL =
-  "https://bravtexfashionstore.vtexcommercestable.com.br/checkout";
+const CHECKOUT_URL = "https://maeztraio.vtexcommercestable.com.br/checkout";
 
 function Cart() {
   const { displayCart } = useUI();

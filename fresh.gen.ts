@@ -2,20 +2,42 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import config from "./deno.json" assert { type: "json" };
+import * as $$$$0 from "$live/functions/EffectSelectPage.ts";
+import * as $$$$1 from "$live/functions/MatchDate.ts";
+import * as $$$$2 from "$live/functions/MatchEnvironment.ts";
+import * as $$$$3 from "$live/functions/MatchRandom.ts";
+import * as $$$$4 from "$live/functions/MatchSite.ts";
+import * as $$$$5 from "$live/functions/MatchUserAgent.ts";
 import { context } from "$live/live.ts";
 import { DecoManifest } from "$live/types.ts";
-import * as $0 from "./routes/[...catchall].tsx";
-import * as $1 from "./routes/_app.tsx";
-import * as $2 from "./routes/_middleware.ts";
-import * as $3 from "./routes/api/[...catchall].tsx";
-import * as $4 from "./routes/index.tsx";
-import * as $5 from "./routes/inspect-vscode.ts";
+import * as $$$$6 from "deco-sites/std/functions/occProductDetailsPage.ts";
+import * as $$$$7 from "deco-sites/std/functions/shopifyProductDetailsPage.ts";
+import * as $$$$8 from "deco-sites/std/functions/shopifyProductList.ts";
+import * as $$$$9 from "deco-sites/std/functions/shopifyProductListingPage.ts";
+import * as $$$$10 from "deco-sites/std/functions/vtexLegacyProductDetailsPage.ts";
+import * as $$$$11 from "deco-sites/std/functions/vtexLegacyProductList.ts";
+import * as $$$$12 from "deco-sites/std/functions/vtexLegacyProductListingPage.ts";
+import * as $$$$13 from "deco-sites/std/functions/vtexProductDetailsPage.ts";
+import * as $$$$14 from "deco-sites/std/functions/vtexProductList.ts";
+import * as $$$$15 from "deco-sites/std/functions/vtexProductListingPage.ts";
+import * as $$$14 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$15 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$16 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$11 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$12 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$13 from "deco-sites/std/sections/SEOPLP.tsx";
+import config from "./deno.json" assert { type: "json" };
 import * as $$0 from "./islands/AddToCartButton.tsx";
 import * as $$1 from "./islands/HeaderButton.tsx";
 import * as $$2 from "./islands/HeaderModals.tsx";
 import * as $$3 from "./islands/LiveControls.tsx";
 import * as $$4 from "./islands/SearchControls.tsx";
+import * as $3 from "./routes/api/[...catchall].tsx";
+import * as $4 from "./routes/index.tsx";
+import * as $5 from "./routes/inspect-vscode.ts";
+import * as $0 from "./routes/[...catchall].tsx";
+import * as $1 from "./routes/_app.tsx";
+import * as $2 from "./routes/_middleware.ts";
 import * as $$$0 from "./sections/Carousel.tsx";
 import * as $$$1 from "./sections/CookieConsent.tsx";
 import * as $$$2 from "./sections/DesignSystem.story.tsx";
@@ -27,28 +49,6 @@ import * as $$$7 from "./sections/ProductDetails.tsx";
 import * as $$$8 from "./sections/ProductGallery.tsx";
 import * as $$$9 from "./sections/ProductShelf.tsx";
 import * as $$$10 from "./sections/SearchControls.tsx";
-import * as $$$11 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$12 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$13 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$14 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$15 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$16 from "deco-sites/std/sections/configVTEX.global.tsx";
-import * as $$$$0 from "$live/functions/EffectSelectPage.ts";
-import * as $$$$1 from "$live/functions/MatchDate.ts";
-import * as $$$$2 from "$live/functions/MatchEnvironment.ts";
-import * as $$$$3 from "$live/functions/MatchRandom.ts";
-import * as $$$$4 from "$live/functions/MatchSite.ts";
-import * as $$$$5 from "$live/functions/MatchUserAgent.ts";
-import * as $$$$6 from "deco-sites/std/functions/occProductDetailsPage.ts";
-import * as $$$$7 from "deco-sites/std/functions/shopifyProductDetailsPage.ts";
-import * as $$$$8 from "deco-sites/std/functions/shopifyProductList.ts";
-import * as $$$$9 from "deco-sites/std/functions/shopifyProductListingPage.ts";
-import * as $$$$10 from "deco-sites/std/functions/vtexLegacyProductDetailsPage.ts";
-import * as $$$$11 from "deco-sites/std/functions/vtexLegacyProductList.ts";
-import * as $$$$12 from "deco-sites/std/functions/vtexLegacyProductListingPage.ts";
-import * as $$$$13 from "deco-sites/std/functions/vtexProductDetailsPage.ts";
-import * as $$$$14 from "deco-sites/std/functions/vtexProductList.ts";
-import * as $$$$15 from "deco-sites/std/functions/vtexProductListingPage.ts";
 
 const manifest: DecoManifest = {
   routes: {
